@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* #navbar{
+    box-shadow: -1px 7px 12px 0px rgba(204, 226, 216, 0.6);
+        -webkit-box-shadow: -1px 7px 12px 0px rgba(204, 226, 216, 0.6);
+        -moz-box-shadow: -1px 7px 12px 0px rgba(204, 226, 216, 0.6)
+} */
+#navbar {
+    box-shadow: -1px 6px 8px 0px rgba(204, 226, 216, 0.6);
+    -webkit-box-shadow: -1px 3px 12px 0px rgba(204, 226, 216, 0.6);
+    -moz-box-shadow: -1px 3px 12px 0px rgba(204, 226, 216, 0.6)
+}
+
+.header-wrapper {
+    /* background-image: url('./images/main.jpg'); */
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.orangeElipse {
+    background-color: rgba(255, 225, 209, 0.47);
+    box-shadow: -2px -4px 19px 18px rgba(255, 225, 209, 0.47);
+    -webkit-box-shadow: -2px -4px 19px 18px rgba(255, 225, 209, 0.47);
+    -moz-box-shadow: -2px -4px 19px 18px rgba(255, 225, 209, 0.47)
+}
+
+.greenElipse {
+    background-color: rgba(204, 226, 216, 0.47);
+    box-shadow: -2px -4px 19px 18px rgba(204, 226, 216, 0.47);
+    -webkit-box-shadow: -2px -4px 19px 18px rgba(204, 226, 216, 0.47);
+    -moz-box-shadow: -2px -4px 19px 18px rgba(204, 226, 216, 0.47)
+}
+
+.cardCounterLabel {
+    font-family: 'Jost', sans-serif;
+}
+
+.wrapperBlur {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.border-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/*  */
+
+.button__bar {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 20px;
+    border-radius: 40px;
+    width: auto;
+    text-align: center;
+}
+
+.button__bar li {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+}
+
+.button__bar li button {
+    border: none;
+    background: #C2C2C2;
+    color: transparent;
+    cursor: pointer;
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 7.5px;
+}
+
+.button__bar li.slick-active button {
+    background-color: #00703D;
+}
+
+
+.slick-slide img {
+    border: 5px solid #fff;
+    display: block;
+    margin: auto;
+}
+
+.nav-links:hover {
+    color: #FF6B18;
+    transition: all;
+    transition: 300;
+}
+
+.nav-links:active {
+    color: #FF6B18;
+}
+
+
+.descCardHrz {
+    /* create animation show this component when hover from bottom */
+    animation: fadeIn alternate ease .4s;
+}
+
+
+
+/* option styling */
+
+
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
